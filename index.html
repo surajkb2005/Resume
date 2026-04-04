@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Krishna Banavalikar | Software Engineer</title>
+    <title> Suraj Krishna Banavalikar </title>
     <link rel="stylesheet" href="./public/style.css">
 </head>
 
 <body>
     <header class="hero">
         <h1>Suraj Krishna Banavalikar</h1>
-        <h2>Software Engineer</h2>
-        <p>Passionate about developing innovative programs that expedite organizational success and efficiency.</p>
-
+        <h2>B.E. Computer Science</h2>
+        <div class="contact-info">
+            <a href="mailto:skbanavalikar2105@gmail.com">skbanavalikar2105@gmail.com</a>
+            <span>•</span>
+            <span>+91 9663132144</span>
+        </div>
         <div class="social-links">
-            <a href="mailto:skbanavalikar2105@gmail.com">Email</a>
             <a href="https://github.com/surajkb2005" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/suraj-banavalikar-7043202a5" target="_blank">LinkedIn</a>
+            <a href="https://linkedin.com/in/suraj-banavalikar-7043202a5/" target="_blank">LinkedIn</a>
         </div>
     </header>
 
@@ -28,8 +30,7 @@
             <div class="skill-category">
                 <h4>Languages</h4>
                 <div class="skill-group">
-                    <span class="skill-box">C</span>
-                    <span class="skill-box">C++</span>
+                    <span class="skill-box">C/C++</span>
                     <span class="skill-box">Java</span>
                     <span class="skill-box">Python</span>
                     <span class="skill-box">JavaScript</span>
@@ -37,35 +38,160 @@
             </div>
 
             <div class="skill-category">
-                <h4>Frameworks & Databases</h4>
+                <h4>Web Development</h4>
                 <div class="skill-group">
-                    <span class="skill-box">MongoDB</span>
-                    <span class="skill-box">Express.js</span>
-                    <span class="skill-box">React</span>
+                    <span class="skill-box">HTML/CSS</span>
+                    <span class="skill-box">React.js</span>
                     <span class="skill-box">Node.js</span>
-                    <span class="skill-box">Pinecone DB</span>
+                    <span class="skill-box">REST APIs</span>
+                    <span class="skill-box">FASTAPI</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Databases & Tools</h4>
+                <div class="skill-group">
+                    <span class="skill-box">PostgreSQL</span>
+                    <span class="skill-box">MySQL</span>
+                    <span class="skill-box">MongoDB</span>
+                    <span class="skill-box">Docker</span>
+                    <span class="skill-box">Linux</span>
+                    <span class="skill-box">Git & GitHub</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>CS Fundamentals</h4>
+                <div class="skill-group">
+                    <span class="skill-box">DSA</span>
+                    <span class="skill-box">OOP</span>
+                    <span class="skill-box">OS</span>
+                    <span class="skill-box">DBMS</span>
+                    <span class="skill-box">Computer Networks</span>
                 </div>
             </div>
         </section>
 
-        <section class="projects-section">
-            <h3>My Projects</h3>
-
-            <article class="card">
+        <section class="experience-section">
+            <h3>Experience</h3>
+            <div class="timeline-item card">
                 <div class="card-header">
-                    <h4 class="title">Campus Helpdesk</h4>
-                    <span class="badge">MERN Stack</span>
-                    <span class="badge">Pinecone DB</span>
+                    <h4 class="title">Software Engineer - Avionics</h4>
+                    <span class="badge">May 2025 - Present</span>
                 </div>
-                <div class="content">
-                    <p>An intelligent application designed to help students ask queries and also to instantly retrieve
-                        the latest official university circulars.</p>
+                <h5 class="subtitle">RIT S.T.A.R.D.U.S.T Club</h5>
+                <ul class="bullet-list">
+                    <li>Designed modular software architecture for an autonomous drone system, improving scalability and
+                        maintainability.</li>
+                    <li>Structured Python-based telemetry processing pipelines for real-time mission analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h3>Featured Projects</h3>
+
+            <div class="card-grid">
+
+                <article class="card">
+                    <div class="card-header">
+                        <h4 class="title">Campus Helpdesk (AI Powered)</h4>
+                        <span class="badge">Python</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">Pinecone</span>
+                    </div>
+                    <div class="content">
+                        <ul class="bullet-list">
+                            <li>Built an AI-powered query resolution system using Pinecone vector DB, reducing manual
+                                query
+                                handling by ~40%.</li>
+                            <li>Implemented a speech-to-text interface to improve accessibility via voice commands.</li>
+                            <li>Developed a distributed chatbot architecture using backend clustering (PM2) to support
+                                ~50-80 concurrent users.</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/varun99015/Campus-HelpDesk" target="_blank"
+                            class="link-btn outline">GitHub Repo</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h4 class="title">StellarRoutes</h4>
+                        <span class="badge">MERN Stack</span>
+                        <span class="badge">Leaflet.js</span>
+                        <span class="badge">NASA APIs</span>
+                    </div>
+                    <div class="content">
+                        <p><em>GPS-independent navigation system designed for high-interference environments like Solar
+                                Storms.</em></p>
+                        <ul class="bullet-list">
+                            <li>Implemented Inertial Navigation logic using mobile IMU sensor data to calculate position
+                                without satellite dependency.</li>
+                            <li>Integrated NASA's NOVA API for live kp index values and proposed integration with ISRO's
+                                Aditya-L1 real-time telemetry.</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/varun99015/StellarRoute" target="_blank"
+                            class="link-btn outline">GitHub
+                            Repo</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <h4 class="title">TwinStep Sort</h4>
+                        <span class="badge">Java</span>
+                        <span class="badge">Algorithms</span>
+                    </div>
+                    <div class="content">
+                        <ul class="bullet-list">
+                            <li>Created a hybrid sorting algorithm fusing the stability of Merge Sort with the speed of
+                                Quick Sort.</li>
+                            <li>Optimized performance using an adaptive switching mechanism based on dataset partition
+                                size
+                                and pattern.</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/surajkb2005/TwinStep_Sort" target="_blank"
+                            class="link-btn outline">GitHub Repo</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="education-section">
+            <h3>Education</h3>
+            <div class="timeline-item card">
+                <div class="card-header">
+                    <h4 class="title">Ramaiah Institute of Technology (MSRIT)</h4>
+                    <span class="badge highlight">CGPA: 9.2/10</span>
                 </div>
-                <div class="card-actions">
-                    <a href="./pages/campus_helpdesk.html" class="link-btn">View Live Demo</a>
-                    <a href="https://github.com/varun99015/Campus-HelpDesk" class="link-btn outline">GitHub Repo</a>
+                <h5 class="subtitle">B.E. in Computer Science and Engineering | Oct 2023 - Present</h5>
+                <p class="coursework"><strong>Relevant Coursework:</strong> OOP Java, Databases, Discrete Mathematics,
+                    DSA, OS, Computer Networks, DAA, Microcontrollers & IoT.</p>
+            </div>
+
+            <div class="timeline-item card" style="margin-top: 1rem;">
+                <div class="card-header">
+                    <h4 class="title">St. Joseph PU College</h4>
+                    <span class="badge highlight">Grade: 96.16%</span>
                 </div>
-            </article>
+                <h5 class="subtitle">Course in PCMC | Aug 2021 - March 2023</h5>
+            </div>
+        </section>
+
+        <section class="awards-section">
+            <h3>Awards & Certifications</h3>
+            <ul class="bullet-list card">
+                <li><strong>2nd Place:</strong> WHACKiest 2025 (24-hour hackathon at MSRIT) - Built the StellarRoute
+                    backend.</li>
+                <li><strong>Certification:</strong> Data Structures and Algorithms with LeetCode Solving (Udemy).</li>
+            </ul>
         </section>
     </main>
 </body>
