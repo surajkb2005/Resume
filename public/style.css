@@ -28,7 +28,7 @@ body {
     margin: auto;
 }
 
-/* --- HERO SECTION (More Compact) --- */
+/* --- HERO SECTION --- */
 .hero {
     text-align: center;
     margin-bottom: 2.5rem; /* Reduced from 4rem */
@@ -316,4 +316,29 @@ body {
         radial-gradient(circle at 20% 30%, rgba(56,189,248,0.15), transparent 40%),
         radial-gradient(circle at 80% 70%, rgba(129,140,248,0.1), transparent 40%);
     background-size: 40px 40px, 40px 40px, auto, auto;
+}
+
+.project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.project-card.active .project-details {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.expand-icon {
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-card.active .expand-icon {
+    transform: rotate(45deg);
 }
