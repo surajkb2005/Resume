@@ -193,3 +193,62 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
     background: var(--text-main);
     color: var(--bg-dark);
 }
+
+/* --- CERTIFICATIONS GRID --- */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; /* Space between the blocks */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cert-card {
+    background-color: #1e1e24; 
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+}
+
+.cert-card strong {
+    font-size: 1rem;
+    color: #ffffff; 
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+}
+
+.cert-issuer {
+    font-size: 0.85em;
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 1rem;
+}
+
+.cert-link {
+    font-size: 0.9em;
+    color: #66b3ff; 
+    text-decoration: none;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 800px) {
+    .cert-grid {
+        grid-template-columns: 1fr; /* Changes back to 1 column on small screens */
+    }
+}
