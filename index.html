@@ -103,9 +103,9 @@
 
             <div class="card-grid">
 
-                <article class="card">
-                    <div class="card-header">
-                        <h4 class="title">Campus Helpdesk (AI Powered)</h4>
+                <article class="card project-card">
+                    <div class="card-header" onclick="toggleProject(this)">
+                        <h4 class=" title">Campus Helpdesk (AI Powered)</h4>
                         <div class="project-images">
                             <img src="./public/assets/images/Projects/CampusHelpdesk.png"
                                 alt="Campus Helpdesk Project Screenshot">
@@ -113,8 +113,11 @@
                         <span class="badge">Python</span>
                         <span class="badge">MongoDB</span>
                         <span class="badge">Pinecone</span>
+                        <span class="expand-icon">+</span>
                     </div>
-                    <div class="content">
+                    Campus Helpdesk is an AI-powered chatbot designed to assist students with campus-related queries,
+                    reducing manual workload for staff and department.
+                    <div class="project-details">
                         <ul class="bullet-list">
                             <li>Built an AI-powered query resolution system using Pinecone vector DB, reducing manual
                                 query
@@ -130,8 +133,8 @@
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="card-header">
+                <article class="card project-card">
+                    <div class="card-header" onclick="toggleProject(this)">
                         <h4 class="title">StellarRoutes</h4>
                         <div class="project-images">
                             <img src="./public/assets/images/Projects/StellarRoute.png"
@@ -140,8 +143,11 @@
                         <span class="badge">MERN Stack</span>
                         <span class="badge">Leaflet.js</span>
                         <span class="badge">NASA APIs</span>
+                        <span class="expand-icon">+</span>
                     </div>
-                    <div class="content">
+                    StellarRoute is a GPS-independent navigation system designed for high-interference environments like
+                    Solar Storms.
+                    <div class="project-details">
                         <p><em>GPS-independent navigation system designed for high-interference environments like Solar
                                 Storms.</em></p>
                         <ul class="bullet-list">
@@ -158,13 +164,16 @@
                     </div>
                 </article>
 
-                <article class="card">
-                    <div class="card-header">
+                <article class="card project-card">
+                    <div class="card-header" onclick="toggleProject(this)">
                         <h4 class="title">TwinStep Sort</h4>
                         <span class="badge">Java</span>
                         <span class="badge">Algorithms</span>
+                        <span class="expand-icon">+</span>
                     </div>
-                    <div class="content">
+                    <div class="project-details">
+                        <p><em>GPS-independent navigation system designed for high-interference environments like Solar
+                                Storms.</em></p>
                         <ul class="bullet-list">
                             <li>Created a hybrid sorting algorithm fusing the stability of Merge Sort with the speed of
                                 Quick Sort.</li>
@@ -286,6 +295,11 @@
                 document.body.appendChild(popup);
             };
         });
+
+        function toggleProject(header) {
+            const card = header.parentElement;
+            card.classList.toggle("active");
+        }
     </script>
 </body>
 
