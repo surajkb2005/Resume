@@ -15,6 +15,9 @@
         </div>
         <h1>Suraj Krishna Banavalikar</h1>
         <h2>B.E. Computer Science</h2>
+        <p class="tagline">
+            Building Backend systems • Full Stack Developer • Software Development Enthusiast
+        </p>
         <div class="contact-info">
             <a href="mailto:skbanavalikar2105@gmail.com">skbanavalikar2105@gmail.com</a>
             <span>•</span>
@@ -103,6 +106,9 @@
                 <article class="card">
                     <div class="card-header">
                         <h4 class="title">Campus Helpdesk (AI Powered)</h4>
+                        <div class="project-images">
+                            <img src="./public/assets/images/DSA_Certificate_udemy.jpg" alt="Project Screenshot">
+                        </div>
                         <span class="badge">Python</span>
                         <span class="badge">MongoDB</span>
                         <span class="badge">Pinecone</span>
@@ -212,7 +218,7 @@
                             <span style="font-size: 0.9em; color: #17a7e9;">
                                 Built the StellarRoute backend using Node.js/Express.
                                 <a href="https://github.com/varun99015/StellarRoute" target="_blank"
-                                    style="color: rgb(163, 201, 218);">View Project</a>
+                                    style="text-decoration:none; color: rgb(163, 201, 218);">View Project</a>
                             </span>
                         </li>
                     </ul>
@@ -250,6 +256,32 @@
             </div>
         </section>
     </main>
+    <script>
+        document.querySelectorAll('.project-images img').forEach(img => {
+            img.onclick = () => {
+                let popup = document.createElement('div');
+                popup.style = `
+            position: fixed;
+            top:0; left:0;
+            width:100%; height:100%;
+            background: rgba(0,0,0,0.8);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            z-index:1000;
+        `;
+
+                let bigImg = document.createElement('img');
+                bigImg.src = img.src;
+                bigImg.style = "max-width:60%; border-radius:10px;";
+
+                popup.appendChild(bigImg);
+                popup.onclick = () => popup.remove();
+
+                document.body.appendChild(popup);
+            };
+        });
+    </script>
 </body>
 
 </html>
