@@ -56,6 +56,26 @@ body {
     margin-bottom: 1rem;
 }
 
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
 /* Flexbox to put contact info in a tighter row */
 .contact-info { 
     margin-bottom: 1.2rem; 
