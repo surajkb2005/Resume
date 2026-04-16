@@ -103,8 +103,8 @@
 
             <div class="card-grid">
 
-                <article class="card project-card">
-                    <div class="card-header" onclick="toggleProject(this)">
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class=" card-header">
                         <h4 class=" title">Campus Helpdesk (AI Powered)</h4>
                         <div class="project-images">
                             <img src="./public/assets/images/Projects/CampusHelpdesk.png"
@@ -129,13 +129,14 @@
                     </div>
                     <div class="card-actions">
                         <a href="https://github.com/varun99015/Campus-HelpDesk" target="_blank"
-                            class="link-btn outline">GitHub Repo</a>
+                            class="link-btn outline">GitHub
+                            Repo</a>
                     </div>
                 </article>
 
-                <article class="card project-card">
-                    <div class="card-header" onclick="toggleProject(this)">
-                        <h4 class="title">StellarRoutes</h4>
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="card-header">
+                        <h4 class="title">StellarRoute</h4>
                         <div class="project-images">
                             <img src="./public/assets/images/Projects/StellarRoute.png"
                                 alt="StellarRoute Project Screenshot">
@@ -164,8 +165,8 @@
                     </div>
                 </article>
 
-                <article class="card project-card">
-                    <div class="card-header" onclick="toggleProject(this)">
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="card-header">
                         <h4 class="title">TwinStep Sort</h4>
                         <span class="badge">Java</span>
                         <span class="badge">Algorithms</span>
@@ -188,6 +189,37 @@
                     </div>
                 </article>
 
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class=" card-header">
+                        <h4 class=" title">Booking System using Redis</h4>
+                        <div class="project-images">
+                            <img src="./public/assets/images/Projects/BookingSystemUsingRedis.png"
+                                alt="Booking System Project Screenshot">
+                        </div>
+                        <span class="badge">Redis Database</span>
+                        <span class="badge">Javascript</span>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    Booking system is designed to demonstrate concurrency control in flight booking scenarios using
+                    Redis or atomic operations and data integrity.
+                    <div class="project-details">
+                        <ul class="bullet-list">
+                            <li>Designed and implemented a Redis-based booking system to handle concurrent reservations.
+                            </li>
+                            <li>Implemented atomic operations to ensure data consistency during booking updates.</li>
+                            <li>Optimized performance by leveraging Redis caching for frequently accessed booking
+                                information.</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/surajkb2005/Booking_System_Using_Redis" target="_blank"
+                            class="link-btn outline">GitHub
+                            Repo</a>
+                        <a href="https://booking-system-using-redis.onrender.com/" target="_blank"
+                            class="link-btn outline">Live Demo</a>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -195,7 +227,7 @@
             <h3>Education</h3>
             <div class="timeline-item card">
                 <div class="card-header">
-                    <h4 class="title">Ramaiah Institute of Technology (MSRIT)</h4>
+                    <h4 class="title">Ramaiah Institute of Technology (MSRIT), Bengaluru</h4>
                     <span class="badge highlight">CGPA: 9.2/10</span>
                 </div>
                 <h5 class="subtitle">B.E. in Computer Science and Engineering | Oct 2023 - Present</h5>
@@ -261,7 +293,7 @@
                         <li class="cert-card">
                             <strong>Software Engineering</strong>
                             <span class="cert-issuer">NPTEL</span>
-                            <a href="./public/assets/images/Software_Engineering.pdf" target="_blank"
+                            <a href="./public/assets/images/Software_Engineering_NPTEL.png" target="_blank"
                                 class="cert-link">Verify Credential </a>
                         </li>
                     </ul>
@@ -275,15 +307,15 @@
             img.onclick = () => {
                 let popup = document.createElement('div');
                 popup.style = `
-            position: fixed;
-            top:0; left:0;
-            width:100%; height:100%;
-            background: rgba(0,0,0,0.8);
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            z-index:1000;
-        `;
+                    position: fixed;
+                    top:0; left:0;
+                    width:100%; height:100%;
+                    background: rgba(0,0,0,0.8);
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    z-index:1000;
+                `;
 
                 let bigImg = document.createElement('img');
                 bigImg.src = img.src;
@@ -297,7 +329,7 @@
         });
 
         function toggleProject(header) {
-            const card = header.parentElement;
+            const card = header;
             card.classList.toggle("active");
         }
     </script>
