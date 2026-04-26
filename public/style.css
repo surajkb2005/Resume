@@ -168,16 +168,16 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
 }
 
 /* --- CARDS & PROJECT GRID --- */
-/* .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.2rem; 
-    align-items: stretch;
-} */
 .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5rem; 
+    align-items: flex-start; 
+}
+/* .card-grid {
     column-count: 2;
     column-gap: 1.2rem;
-}
+} */
 
 .card {
     background: var(--bg-card);
@@ -185,9 +185,11 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
     border-radius: 12px;
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
-    display: inline-block;
+    
+    /* Flexbox setup to make cards stretch and align inner content */
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-bottom: 1.2rem;
 }
 
 .card:hover {
@@ -358,7 +360,7 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
 
 @media (max-width: 800px) {
     .card-grid {
-        column-count: 1;
+        grid-template-columns: 1fr; /* Forces 1 column on smaller screens */
     }
 }
 
