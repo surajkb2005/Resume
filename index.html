@@ -128,9 +128,8 @@
                         </ul>
                     </div>
                     <div class="card-actions">
-                        <a href="https://github.com/varun99015/Campus-HelpDesk" target="_blank"
-                            class="link-btn outline">GitHub
-                            Repo</a>
+                        <a href="./pages/campus_helpdesk.html" target="_blank" class="link-btn outline">
+                            GitHub Repo</a>
                     </div>
                 </article>
 
@@ -166,12 +165,114 @@
                 </article>
 
                 <article class="card project-card" onclick="toggleProject(this)">
+                    <div class=" card-header">
+                        <h4 class=" title">Booking System using Redis</h4>
+                        <div class="project-images">
+                            <img src="./public/assets/images/Projects/BookingSystemUsingRedis.png"
+                                alt="Booking System Project Screenshot">
+                        </div>
+                        <span class="badge">Redis Database</span>
+                        <span class="badge">JS</span>
+                        <span class="badge">Web Sockets</span>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    A real-time, concurrency-safe flight booking engine built with Node.js and Redis to handle
+                    simultaneous seat reservations without data collisions.
+                    <div class="project-details">
+                        <ul class="bullet-list">
+                            <li>Engineered distributed locking using Redis (SET NX EX) to solve race conditions and
+                                guarantee 100% transaction safety for concurrent users.</li>
+                            <li>Architected an event-driven WebSocket server for instant, bi-directional UI
+                                synchronization, completely eliminating inefficient HTTP polling.</li>
+                            <li>Optimized database performance by batching bulk Redis queries (e.g., MGET), successfully
+                                mitigating N+1 bottlenecks and minimizing network requests.</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/surajkb2005/Booking_System_Using_Redis" target="_blank"
+                            class="link-btn outline">GitHub
+                            Repo</a>
+                        <a href="https://booking-system-using-redis.onrender.com/" target="_blank"
+                            class="link-btn outline">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="card-header">
+                        <h4 class="title">Debugging Doubts</h4>
+                        <div class="image-slider">
+                            <div class="slider-track">
+                                <img src="./public/assets/images/Projects/DebuggingDoubts.png"
+                                    alt="Booking System Project Screenshot 1">
+                                <img src="./public/assets/images/Projects/DebuggingDoubts1.png"
+                                    alt="Booking System Project Screenshot 2">
+                            </div>
+                        </div>
+                        <span class="badge">MERN stack</span>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    This is my youtube channel platform, to help to learn computer science basic concepts with
+                    animations and track their progress.
+                    <div class="project-details">
+                        <ul class="bullet-list">
+                            <li>Created a youtube based video platform for tracking progress of students</li>
+                            <li>Uploaded the HTML,CSS,Js based animations based on textbook of some useful concepts</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/surajkb2005/DebuggingDoubts" target="_blank"
+                            class="link-btn outline">GitHub Repo</a>
+                        <a href="https://debuggingdoubts-1.onrender.com/" target="_blank" class="link-btn outline">
+                            Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class=" card-header">
+                        <h4 class=" title">Hand Gesture Game Controler</h4>
+                        <div class="project-images">
+                            <img src="./public/assets/images/Projects/OpenCVCarGame.png"
+                                alt="Booking System Project Screenshot">
+                        </div>
+                        <span class="badge">Python</span>
+                        <span class="badge">OpenCV</span>
+                        <span class="badge">MediaPipe</span>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    Developed a real-time gesture-to-keyboard interface that translates hand landmarks into direct
+                    hardware inputs for gaming and system control.
+                    <div class="project-details">
+                        <ul class="bullet-list">
+                            <li>Engineered a multi-hand logic engine to map complex gestures to concurrent keyboard
+                                actions, such as simultaneous steering and acceleration.</li>
+                            <li>Implemented low-level Win32 API calls to bypass standard OS input limitations, ensuring
+                                compatibility with high-performance, full-screen applications.</li>
+                            <li>Integrated MediaPipe Hands to track 21 3D landmarks, enabling high-precision detection
+                                of hand states (Open/Closed/Mid) with minimal latency.</li>
+                            <li>Made a tutorial for others, on my youtube channel.</li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/surajkb2005/OpenCV" target="_blank" class="link-btn outline">GitHub
+                            Repo</a>
+                        <a href="https://youtu.be/HopyiMhyfKg?si=AwDFh7GDK9abPD5W" target="_blank"
+                            class="link-btn outline">Youtube Tutorial</a>
+                    </div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
                     <div class="card-header">
                         <h4 class="title">TwinStep Sort</h4>
+                        <div class="project-images">
+                            <img src="./public/assets/images/Projects/TwinStepSort.png"
+                                alt="Booking System Project Screenshot">
+                        </div>
                         <span class="badge">Java</span>
                         <span class="badge">Algorithms</span>
                         <span class="expand-icon">+</span>
                     </div>
+                    The Hybrid algorithm for the sorting function to switch Merge sort and Quick sort as per required by
+                    the algorithm.
                     <div class="project-details">
                         <p><em>GPS-independent navigation system designed for high-interference environments like Solar
                                 Storms.</em></p>
@@ -186,37 +287,6 @@
                     <div class="card-actions">
                         <a href="https://github.com/surajkb2005/TwinStep_Sort" target="_blank"
                             class="link-btn outline">GitHub Repo</a>
-                    </div>
-                </article>
-
-                <article class="card project-card" onclick="toggleProject(this)">
-                    <div class=" card-header">
-                        <h4 class=" title">Booking System using Redis</h4>
-                        <div class="project-images">
-                            <img src="./public/assets/images/Projects/BookingSystemUsingRedis.png"
-                                alt="Booking System Project Screenshot">
-                        </div>
-                        <span class="badge">Redis Database</span>
-                        <span class="badge">Javascript</span>
-                        <span class="expand-icon">+</span>
-                    </div>
-                    Booking system is designed to demonstrate concurrency control in flight booking scenarios using
-                    Redis or atomic operations and data integrity.
-                    <div class="project-details">
-                        <ul class="bullet-list">
-                            <li>Designed and implemented a Redis-based booking system to handle concurrent reservations.
-                            </li>
-                            <li>Implemented atomic operations to ensure data consistency during booking updates.</li>
-                            <li>Optimized performance by leveraging Redis caching for frequently accessed booking
-                                information.</li>
-                        </ul>
-                    </div>
-                    <div class="card-actions">
-                        <a href="https://github.com/surajkb2005/Booking_System_Using_Redis" target="_blank"
-                            class="link-btn outline">GitHub
-                            Repo</a>
-                        <a href="https://booking-system-using-redis.onrender.com/" target="_blank"
-                            class="link-btn outline">Live Demo</a>
                     </div>
                 </article>
 
@@ -294,7 +364,8 @@
                             <strong>Software Engineering</strong>
                             <span class="cert-issuer">NPTEL</span>
                             <a href="./public/assets/images/Software_Engineering_NPTEL.png" target="_blank"
-                                class="cert-link">Verify Credential </a>
+                                class="cert-link">Verify Credential
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -319,7 +390,35 @@
 
                 let bigImg = document.createElement('img');
                 bigImg.src = img.src;
-                bigImg.style = "max-width:60%; border-radius:10px;";
+                bigImg.style = "max-width:80%; max-height:80vh; object-fit:contain; border-radius:10px;";
+
+                popup.appendChild(bigImg);
+                popup.onclick = () => popup.remove();
+
+                document.body.appendChild(popup);
+            };
+        });
+
+        document.querySelectorAll('.slider-track img').forEach(img => {
+            img.onclick = (event) => {
+                // This prevents the click from triggering toggleProject() on the card
+                event.stopPropagation();
+
+                let popup = document.createElement('div');
+                popup.style = `
+                position: fixed;
+                top:0; left:0;
+                width:100%; height:100%;
+                background: rgba(0,0,0,0.8);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                z-index:1000;
+            `;
+
+                let bigImg = document.createElement('img');
+                bigImg.src = img.src;
+                bigImg.style = "max-width:80%; max-height:80vh; object-fit:contain; border-radius:10px;"; // Tweaked slightly so vertical images fit well
 
                 popup.appendChild(bigImg);
                 popup.onclick = () => popup.remove();

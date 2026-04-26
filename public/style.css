@@ -361,3 +361,55 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
         column-count: 1;
     }
 }
+
+/* --- PROJECT IMAGE SLIDER --- */
+.image-slider {
+    width: 100%;
+    overflow: hidden; /* Hides the second image until it slides in */
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.image-slider:hover {
+    border-color: var(--accent-primary);
+}
+
+.slider-track {
+    display: flex;
+    width: 200%; /* 2 images = 200% width */
+    /* 8s total cycle: slides back and forth smoothly */
+    animation: slideImages 6s infinite ease-in-out; 
+}
+
+/* Pause the sliding animation when the user hovers over the images */
+.image-slider:hover .slider-track {
+    animation-play-state: paused; 
+}
+
+.slider-track img {
+    width: 50%; /* Each image takes exactly half of the 200% track (100% of the visible container) */
+    flex-shrink: 0;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.slider-track img:hover {
+    transform: scale(1.08); /* Slight zoom on hover, contained within the slider */
+}
+
+/* Keyframes for sliding 2 images */
+@keyframes slideImages {
+    0%, 40% { 
+        transform: translateX(0); /* Stay on Image 1 */
+    }
+    50%, 90% { 
+        transform: translateX(-50%); /* Slide to Image 2 */
+    }
+    100% { 
+        transform: translateX(0); /* Slide back to Image 1 */
+    }
+}
