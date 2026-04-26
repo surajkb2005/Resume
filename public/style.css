@@ -416,18 +416,65 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
     }
 }
 
-.teaching{
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    width: 65px;
-    height: 65px; 
-    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(129, 140, 248, 0.15)); 
-    border-radius: 14px;
+.teaching {
+    width: 160px; /* Made the block bigger */
+    height: 160px; 
+    background: #ffffff; /* Solid white background */
+    border-radius: 50%; /* Makes the white background a perfect circle */
     display: flex;
     align-items: center;
     justify-content: center; 
-    border: 1px solid rgba(56, 189, 248, 0.4); 
-    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
-    backdrop-filter: blur(4px);
+    border: 3px solid rgba(56, 189, 248, 0.8); /* Slightly thicker border to pop */
+    box-shadow: 0 5px 25px rgba(56, 189, 248, 0.3); /* Stronger glow effect */
+    flex-shrink: 0; /* Prevents the image from squishing on smaller screens */
+    padding: 20px; /* Gives the logo some breathing room inside the white circle */
+    transition: transform 0.3s ease;
+}
+
+.teaching:hover {
+    transform: scale(1.05); /* Adds a subtle zoom effect when hovering over the logo */
+}
+
+/* Layout for the Teaching Section */
+.teaching-container {
+    display: flex;
+    flex-direction: column-reverse; /* Image on top for mobile */
+    align-items: center;
+    gap: 2rem;
+    text-align: center; /* Center text on mobile */
+}
+
+.teaching-text {
+    flex: 1;
+}
+
+.teaching-text .description {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.teaching-btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center buttons on mobile */
+}
+
+/* Desktop View (Screens wider than 800px) */
+@media (min-width: 800px) {
+    .teaching-container {
+        flex-direction: row; /* Side-by-side */
+        text-align: left;    /* Left align text */
+        align-items: center;
+    }
+
+    .teaching-btns {
+        justify-content: flex-start; /* Align buttons to left */
+    }
+    
+    /* Ensure the text takes up the remaining space */
+    .teaching-text {
+        min-width: 300px;
+    }
 }
