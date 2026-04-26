@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Suraj Krishna Banavalikar </title>
+
+    <meta name="description"
+        content="Portfolio of Suraj Krishna Banavalikar, a Full Stack Developer and CSE student specializing in backend systems, AI tools, and algorithmic challenges.">
+    <meta name="author" content="Suraj Krishna Banavalikar">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surajkb2005.github.io/Resume/">
+    <meta property="og:title" content="Suraj Krishna Banavalikar | Software Engineer">
+    <meta property="og:description"
+        content="Building highly concurrent backend systems, AI-powered tools, and exploring space technology. Check out my projects.">
+    <meta property="og:image" content="./public/assets/images/Profile.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Suraj K. Banavalikar | Software Engineer">
+    <meta property="twitter:description"
+        content="Building highly concurrent backend systems, AI-powered tools, and exploring space technology. Check out my projects.">
+    <meta property="twitter:image" content="./public/assets/images/Profile.jpg">
+
     <link rel="stylesheet" href="./public/style.css">
 </head>
 
@@ -14,7 +32,7 @@
             <img src="./public/assets/images/Profile.jpg" alt="Profile Photo" class="profile-pic">
         </div>
         <h1>Suraj Krishna Banavalikar</h1>
-        <h2>B.E. Computer Science</h2>
+        <h2>B.E. Computer Science and Engineering</h2>
         <p class="tagline">
             Building Backend systems • Full Stack Developer • Software Development Enthusiast
         </p>
@@ -26,10 +44,33 @@
         <div class="social-links">
             <a href="https://github.com/surajkb2005" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/suraj-banavalikar-7043202a5/" target="_blank">LinkedIn</a>
+            <a href="./public/assets/Suraj_Krishna_Banavalikar_Resume.pdf"
+                download="Suraj_Krishna_Banavalikar_Resume.pdf"
+                style="background: transparent; border: 2px solid var(--accent-primary); color: var(--accent-primary);">
+                Download Resume
+            </a>
         </div>
     </header>
 
     <main>
+        <section class="about-section">
+            <h3>About Me</h3>
+            <div class="card" style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7;">
+                <p style="margin-bottom: 1rem;">
+                    I am a 2023-2027 batch Computer Science and Engineering student at MSRIT, specializing in building
+                    highly
+                    concurrent backend systems and scalable APIs. I thrive on solving complex algorithmic challenges and
+                    engineering software for high-stakes environments, such as modular architectures for autonomous
+                    drone systems and space-weather-aware navigation.
+                </p>
+                <p>
+                    Beyond traditional development, I am deeply passionate about education. I run the "Debugging Doubts"
+                    platform, where I break down intricate computer science concepts, like Operating System concepts,
+                    using interactive web animations and relatable analogies to make learning
+                    accessible and engaging.
+                </p>
+            </div>
+        </section>
         <section class="skills-section">
             <h3>Technical Skills</h3>
 
@@ -82,22 +123,6 @@
             </div>
         </section>
 
-        <section class="experience-section">
-            <h3>Experience</h3>
-            <div class="timeline-item card">
-                <div class="card-header">
-                    <h4 class="title">Software Engineer - Avionics</h4>
-                    <span class="badge">May 2025 - Present</span>
-                </div>
-                <h5 class="subtitle">RIT S.T.A.R.D.U.S.T Club</h5>
-                <ul class="bullet-list">
-                    <li>Designed modular software architecture for an autonomous drone system, improving scalability and
-                        maintainability.</li>
-                    <li>Structured Python-based telemetry processing pipelines for real-time mission analysis.</li>
-                </ul>
-            </div>
-        </section>
-
         <section class="projects-section">
             <h3>Featured Projects</h3>
 
@@ -105,10 +130,14 @@
 
                 <article class="card project-card" onclick="toggleProject(this)">
                     <div class=" card-header">
-                        <h4 class=" title">Campus Helpdesk (AI Powered)</h4>
-                        <div class="project-images">
-                            <img src="./public/assets/images/Projects/CampusHelpdesk.png"
-                                alt="Campus Helpdesk Project Screenshot">
+                        <h4 class=" title">Campus Helpdesk - AI Powered Chatbot</h4>
+                        <div class="image-slider">
+                            <div class="slider-track">
+                                <img src="./public/assets/images/Projects/CampusHelpdesk1.png"
+                                    alt="Campus Helpdesk Project Screenshot 1">
+                                <img src="./public/assets/images/Projects/CampusHelpdesk2.png"
+                                    alt="Campus Helpdesk Project Screenshot 2">
+                            </div>
                         </div>
                         <span class="badge">Python</span>
                         <span class="badge">MongoDB</span>
@@ -140,7 +169,7 @@
                             <img src="./public/assets/images/Projects/StellarRoute.png"
                                 alt="StellarRoute Project Screenshot">
                         </div>
-                        <span class="badge">MERN Stack</span>
+                        <span class="badge">FastAPI</span>
                         <span class="badge">Leaflet.js</span>
                         <span class="badge">NASA APIs</span>
                         <span class="expand-icon">+</span>
@@ -148,8 +177,6 @@
                     StellarRoute is a GPS-independent navigation system designed for high-interference environments like
                     Solar Storms.
                     <div class="project-details">
-                        <p><em>GPS-independent navigation system designed for high-interference environments like Solar
-                                Storms.</em></p>
                         <ul class="bullet-list">
                             <li>Implemented Inertial Navigation logic using mobile IMU sensor data to calculate position
                                 without satellite dependency.</li>
@@ -158,9 +185,9 @@
                         </ul>
                     </div>
                     <div class="card-actions">
-                        <a href="https://github.com/varun99015/StellarRoute" target="_blank"
-                            class="link-btn outline">GitHub
-                            Repo</a>
+                        <a href="https://github.com/varun99015/StellarRoute" target="_blank" class="link-btn outline">
+                            GitHub Repo
+                        </a>
                     </div>
                 </article>
 
@@ -190,8 +217,9 @@
                     </div>
                     <div class="card-actions">
                         <a href="https://github.com/surajkb2005/Booking_System_Using_Redis" target="_blank"
-                            class="link-btn outline">GitHub
-                            Repo</a>
+                            class="link-btn outline">
+                            GitHub Repo
+                        </a>
                         <a href="https://booking-system-using-redis.onrender.com/" target="_blank"
                             class="link-btn outline">Live Demo</a>
                     </div>
@@ -202,21 +230,22 @@
                         <h4 class="title">Debugging Doubts</h4>
                         <div class="image-slider">
                             <div class="slider-track">
-                                <img src="./public/assets/images/Projects/DebuggingDoubts.png"
-                                    alt="Booking System Project Screenshot 1">
                                 <img src="./public/assets/images/Projects/DebuggingDoubts1.png"
-                                    alt="Booking System Project Screenshot 2">
+                                    alt="Debugging Doubts Project Screenshot 1">
+                                <img src="./public/assets/images/Projects/DebuggingDoubts2.png"
+                                    alt="Debugging Doubts Project Screenshot 2">
                             </div>
                         </div>
                         <span class="badge">MERN stack</span>
                         <span class="expand-icon">+</span>
                     </div>
                     This is my youtube channel platform, to help to learn computer science basic concepts with
-                    animations and track their progress.
+                    animations and also to track their progress.
                     <div class="project-details">
                         <ul class="bullet-list">
                             <li>Created a youtube based video platform for tracking progress of students</li>
-                            <li>Uploaded the HTML,CSS,Js based animations based on textbook of some useful concepts</li>
+                            <li>Uploaded the HTML, CSS, Js based animations, refering textbook, on some useful concepts
+                            </li>
                         </ul>
                     </div>
                     <div class="card-actions">
@@ -232,7 +261,7 @@
                         <h4 class=" title">Hand Gesture Game Controler</h4>
                         <div class="project-images">
                             <img src="./public/assets/images/Projects/OpenCVCarGame.png"
-                                alt="Booking System Project Screenshot">
+                                alt="OpenCV Game Controller Project Screenshot">
                         </div>
                         <span class="badge">Python</span>
                         <span class="badge">OpenCV</span>
@@ -253,8 +282,10 @@
                         </ul>
                     </div>
                     <div class="card-actions">
-                        <a href="https://github.com/surajkb2005/OpenCV" target="_blank" class="link-btn outline">GitHub
-                            Repo</a>
+                        <a href="https://github.com/surajkb2005/OpencvHandDetectForGame.git" target="_blank"
+                            class="link-btn outline">
+                            GitHub Repo
+                        </a>
                         <a href="https://youtu.be/HopyiMhyfKg?si=AwDFh7GDK9abPD5W" target="_blank"
                             class="link-btn outline">Youtube Tutorial</a>
                     </div>
@@ -274,14 +305,11 @@
                     The Hybrid algorithm for the sorting function to switch Merge sort and Quick sort as per required by
                     the algorithm.
                     <div class="project-details">
-                        <p><em>GPS-independent navigation system designed for high-interference environments like Solar
-                                Storms.</em></p>
                         <ul class="bullet-list">
                             <li>Created a hybrid sorting algorithm fusing the stability of Merge Sort with the speed of
                                 Quick Sort.</li>
                             <li>Optimized performance using an adaptive switching mechanism based on dataset partition
-                                size
-                                and pattern.</li>
+                                size and pattern.</li>
                         </ul>
                     </div>
                     <div class="card-actions">
@@ -292,34 +320,99 @@
 
             </div>
         </section>
+        <section>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <a href="https://github.com/surajkb2005" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api?username=surajkb2005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f1115"
+                        alt="Suraj's GitHub Stats"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border-color);">
+                </a>
+            </div>
+        </section>
+
 
         <section class="education-section">
             <h3>Education</h3>
             <div class="timeline-item card">
                 <div class="card-header">
-                    <h4 class="title">Ramaiah Institute of Technology (MSRIT), Bengaluru</h4>
-                    <span class="badge highlight">CGPA: 9.2/10</span>
+                    <h4 class="title">M S Ramaiah Institute of Technology (MSRIT), Bengaluru</h4>
+                    <span class="badge highlight"><b>CGPA: 9.21/10</b></span>
                 </div>
                 <h5 class="subtitle">B.E. in Computer Science and Engineering | Oct 2023 - Present</h5>
-                <p class="coursework"><strong>Relevant Coursework:</strong> OOP Java, Databases, Discrete Mathematics,
-                    DSA, OS, Computer Networks, DAA, Microcontrollers & IoT.</p>
+                <p class="coursework"><strong>Relevant Coursework:</strong> Object Oriented Programming using Java,
+                    Database Management System, Discrete Mathematics,
+                    Data Structure and Algorithms, Operating Systems, Computer Networks,
+                    Microcontrollers & Internet of Things.
+                </p>
             </div>
 
             <div class="timeline-item card" style="margin-top: 1rem;">
                 <div class="card-header">
-                    <h4 class="title">St. Joseph PU College, Karwar</h4>
-                    <span class="badge highlight">Grade: 96.16%</span>
+                    <h4 class="title">St. Joseph's PU College, Karwar</h4>
+                    <span class="badge highlight"><b>Grade: 96.16%</b></span>
                 </div>
                 <h5 class="subtitle">Course in PCMC | Aug 2021 - March 2023</h5>
+                <p class="coursework"><strong>Relevant Coursework:</strong> Object Oriented Programming using C++,
+                    Physics, Chemistry, Mathematics, Computer Science.
+                </p>
             </div>
+
             <div class="timeline-item card" style="margin-top: 1rem;">
                 <div class="card-header">
-                    <h4 class="title">St. Joseph School, Karwar</h4>
-                    <span class="badge highlight">Grade: 98.40%</span>
+                    <h4 class="title">St. Joseph's High School, Karwar</h4>
+                    <span class="badge highlight"><b>Grade: 98.40%</b></span>
                 </div>
                 <h5 class="subtitle">SSLC | July 2021</h5>
             </div>
         </section>
+
+        <section class="experience-section">
+            <h3>Experience</h3>
+            <div class="timeline-item card">
+                <div class="card-header">
+                    <h4 class="title">Software Engineer - Avionics Member</h4>
+                    <span class="badge">May 2025 - Present</span>
+                </div>
+                <h5 class="subtitle">RIT S.T.A.R.D.U.S.T Club</h5>
+                <ul class="bullet-list">
+                    <li>Designed modular software architecture for an autonomous drone system, improving scalability and
+                        maintainability.</li>
+                    <li>Structured Python-based telemetry processing pipelines for real-time mission analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="teaching-section">
+            <h3>Content & Teaching</h3>
+
+            <div class="card teaching-container">
+
+                <div class="teaching-text">
+                    <h4 class="title">Debugging Doubts</h4>
+                    <p class="subtitle">Simplifying CS concepts through animation</p>
+
+                    <p class="description">
+                        I believe the best way to solidify technical knowledge is to teach it. On my channel, I explain
+                        about some Computer Science fundamentals and same I build custom HTML/JS visualizers to explain
+                        algorithms, operating systems, and core engineering concepts step-by-step.
+                    </p>
+
+                    <div class="teaching-btns">
+                        <a href="https://www.youtube.com/@DebuggingDoubts" target="_blank"
+                            class="link-btn outline">Visit Channel</a>
+                        <a href="https://surajkb2005.github.io/TeachingWithAnimations/" class="link-btn outline">View
+                            Animated Visualizations</a>
+                    </div>
+                </div>
+
+                <div class="teaching">
+                    <img src="./public/assets/images/youtube_logo.png" alt="Debugging Doubts Logo"
+                        style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+
+            </div>
+        </section>
+
 
         <section class="awards-section">
             <h3>Awards & Certifications</h3>
@@ -329,12 +422,12 @@
                     <h4 class="title" style="margin-bottom: 0.5rem;">Awards</h4>
                     <ul class="bullet-list">
                         <li>
-                            <strong>2nd Place: WHACKiest 2025</strong> (24-hour hackathon at MSRIT)
+                            <strong>2nd Place in WHACKiest 2025</strong> (24-hour hackathon at MSRIT)
                             <br>
-                            <span style="font-size: 0.9em; color: #17a7e9;">
+                            <span style="font-size: 0.9em; color: #d9e2e7;">
                                 Built the StellarRoute backend using Node.js/Express.
-                                <a href="https://github.com/varun99015/StellarRoute" target="_blank"
-                                    style="text-decoration:none; color: rgb(163, 201, 218);">View Project</a>
+                                <a href="./public/assets/images/wHACKiest2025.png" target="_blank"
+                                    style="text-decoration:none; color: rgb(163, 201, 218);">View Certificate</a>
                             </span>
                         </li>
                     </ul>
@@ -367,11 +460,20 @@
                                 class="cert-link">Verify Credential
                             </a>
                         </li>
+
+                        <li class="cert-card">
+                            <strong>wHACKiest 2025</strong>
+                            <span class="cert-issuer">MSRIT</span>
+                            <a href="./public/assets/images/wHACKiest2025.png" target="_blank" class="cert-link">Verify
+                                Credential
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
             </div>
         </section>
+        <center style="color: rgb(179, 205, 214);">Copyrights @2026</center>
     </main>
     <script>
         document.querySelectorAll('.project-images img').forEach(img => {
