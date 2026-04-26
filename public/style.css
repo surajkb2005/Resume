@@ -415,3 +415,19 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
         transform: translateX(0); /* Slide back to Image 1 */
     }
 }
+
+.teaching{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 65px;
+    height: 65px; 
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(129, 140, 248, 0.15)); 
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid rgba(56, 189, 248, 0.4); 
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
+    backdrop-filter: blur(4px);
+}
