@@ -139,21 +139,34 @@
                                     alt="Campus Helpdesk Project Screenshot 2">
                             </div>
                         </div>
+                        <span class="badge">MERN Stack</span>
                         <span class="badge">Python</span>
-                        <span class="badge">MongoDB</span>
+                        <span class="badge">Javascript</span>
                         <span class="badge">Pinecone</span>
+                        <span class="badge">Redis</span>
+                        <span class="badge">PM2 Clustering</span>
                         <span class="expand-icon">+</span>
                     </div>
                     Campus Helpdesk is an AI-powered chatbot designed to assist students with campus-related queries,
                     reducing manual workload for staff and department.
                     <div class="project-details">
                         <ul class="bullet-list">
-                            <li>Built an AI-powered query resolution system using Pinecone vector DB, reducing manual
-                                query
-                                handling by ~40%.</li>
-                            <li>Implemented a speech-to-text interface to improve accessibility via voice commands.</li>
-                            <li>Developed a distributed chatbot architecture using backend clustering (PM2) to support
-                                ~50-80 concurrent users.</li>
+                            <li>Built an AI-powered query resolution system using vector search (Pinecone + hybrid BM25
+                                re-ranking), reducing manual query handling by ~40% and improving response accuracy.
+                            </li>
+                            <li>Designed a distributed backend architecture using PM2 clustering (currently10 instances
+                                or customizable instances) to enable horizontal scaling and load balancing across CPU
+                                cores, supporting ~50-80 concurrent users with stable latency.</li>
+                            <li>Optimized database performance using MongoDB connection pooling and multi-database
+                                architecture, ensuring efficient handling of concurrent requests and reducing connection
+                                overhead under load.</li>
+                            <li>Built an asynchronous email queue system with batch processing (20 jobs/cycle) and retry
+                                logic, decoupling email workflows from request handling to improve system responsiveness
+                                under concurrency.
+                            </li>
+                            <li>Implemented rate limiting (up to 100 req/15 min per user) and API-level throttling to
+                                prevent overload and ensure fair usage during peak traffic.
+                            </li>
                         </ul>
                     </div>
                     <div class="card-actions">
@@ -178,10 +191,14 @@
                     Solar Storms.
                     <div class="project-details">
                         <ul class="bullet-list">
-                            <li>Implemented Inertial Navigation logic using mobile IMU sensor data to calculate position
-                                without satellite dependency.</li>
-                            <li>Integrated NASA's NOVA API for live kp index values and proposed integration with ISRO's
-                                Aditya-L1 real-time telemetry.</li>
+                            <li>Designed and implemented a GPS-denied navigation system using inertial navigation
+                                (IMU-based dead reckoning).</li>
+                            <li>Processed accelerometer and gyroscope data to estimate position in high-interference
+                                environments, such as solar storms, to calculate position without satellite dependency.
+                            </li>
+                            <li>Integrated NASA's NOVA API for live kp index values and proposed future integration with
+                                ISRO's Aditya-L1 real-time
+                                telemetry.</li>
                         </ul>
                     </div>
                     <div class="card-actions">
@@ -209,13 +226,12 @@
                     An autonomous robot car equipped with ultrasonic sensor to detect and avoid obstacles in real-time.
                     <div class="project-details">
                         <ul class="bullet-list">
-                            <li>Engineered a real-time navigation system using ultrasonic distance measurement and
-                                servo-based environmental scanning.</li>
-                            <li>Implemented decision-making algorithm to select optimal path (left/right/U-turn) based
-                                on sensor data.</li>
-                            <li>Controlled differential drive motors via GPIO for precise movement and obstacle
-                                handling.</li>
-                            <li>Achieved reliable autonomous navigation in dynamic environments.</li>
+                            <li>Built an embedded autonomous navigation system using real-time sensor feedback and
+                                decision algorithms.</li>
+                            <li>Implemented closed-loop control for obstacle avoidance with dynamic path planning
+                                (turn, move, reverse).</li>
+                            <li>Analyzed limitations such as sensor noise, drift, and scalability, proposing
+                                system-level improvements.</li>
                         </ul>
                     </div>
                     <div class="card-actions">
@@ -223,8 +239,8 @@
                             target="_blank" class="link-btn outline">
                             Video Demo
                         </a>
-                        <a href="https://docs.google.com/document/d/1rzOpLUl4dr5sDmqzUGd2z-Kx8UIqxzJpWsL6au7qbr4/edit?usp=sharing"
-                            target="_blank" class="link-btn outline">
+                        <a href="https://github.com/surajkb2005/Obstacles_Avoidance_Land_Rover.git" target="_blank"
+                            class="link-btn outline">
                             Source Code
                         </a>
                     </div>
@@ -265,37 +281,6 @@
                 </article>
 
                 <article class="card project-card" onclick="toggleProject(this)">
-                    <div class="card-header">
-                        <h4 class="title">Debugging Doubts</h4>
-                        <div class="image-slider">
-                            <div class="slider-track">
-                                <img src="./public/assets/images/Projects/DebuggingDoubts1.png"
-                                    alt="Debugging Doubts Project Screenshot 1">
-                                <img src="./public/assets/images/Projects/DebuggingDoubts2.png"
-                                    alt="Debugging Doubts Project Screenshot 2">
-                            </div>
-                        </div>
-                        <span class="badge">MERN stack</span>
-                        <span class="expand-icon">+</span>
-                    </div>
-                    This is my youtube channel platform, to help to learn computer science basic concepts with
-                    animations and also to track their progress.
-                    <div class="project-details">
-                        <ul class="bullet-list">
-                            <li>Created a youtube based video platform for tracking progress of students</li>
-                            <li>Uploaded the HTML, CSS, Js based animations, refering textbook, on some useful concepts
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-actions">
-                        <a href="https://github.com/surajkb2005/DebuggingDoubts" target="_blank"
-                            class="link-btn outline">GitHub Repo</a>
-                        <a href="https://debuggingdoubts-1.onrender.com/" target="_blank" class="link-btn outline">
-                            Live Demo</a>
-                    </div>
-                </article>
-
-                <article class="card project-card" onclick="toggleProject(this)">
                     <div class=" card-header">
                         <h4 class=" title">Hand Gesture Game Controler</h4>
                         <div class="project-images">
@@ -332,6 +317,37 @@
 
                 <article class="card project-card" onclick="toggleProject(this)">
                     <div class="card-header">
+                        <h4 class="title">Debugging Doubts</h4>
+                        <div class="image-slider">
+                            <div class="slider-track">
+                                <img src="./public/assets/images/Projects/DebuggingDoubts1.png"
+                                    alt="Debugging Doubts Project Screenshot 1">
+                                <img src="./public/assets/images/Projects/DebuggingDoubts2.png"
+                                    alt="Debugging Doubts Project Screenshot 2">
+                            </div>
+                        </div>
+                        <span class="badge">MERN stack</span>
+                        <span class="expand-icon">+</span>
+                    </div>
+                    This is my youtube channel platform, to help to learn computer science basic concepts with
+                    animations and also to track their progress.
+                    <div class="project-details">
+                        <ul class="bullet-list">
+                            <li>Created a youtube based video platform for tracking progress of students</li>
+                            <li>Uploaded the HTML, CSS, Js based animations, refering textbook, on some useful concepts
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/surajkb2005/DebuggingDoubts" target="_blank"
+                            class="link-btn outline">GitHub Repo</a>
+                        <a href="https://debuggingdoubts-1.onrender.com/" target="_blank" class="link-btn outline">
+                            Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="card project-card" onclick="toggleProject(this)">
+                    <div class="card-header">
                         <h4 class="title">TwinStep Sort</h4>
                         <div class="project-images">
                             <img src="./public/assets/images/Projects/TwinStepSort.png"
@@ -359,7 +375,8 @@
 
             </div>
         </section>
-        <section>
+
+        <!-- <section>
             <div style="text-align: center; margin-bottom: 2rem;">
                 <a href="https://github.com/surajkb2005" target="_blank">
                     <img src="https://github-readme-stats.vercel.app/api?username=surajkb2005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f1115"
@@ -367,8 +384,7 @@
                         style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border-color);">
                 </a>
             </div>
-        </section>
-
+        </section> -->
 
         <section class="education-section">
             <h3>Education</h3>
@@ -414,9 +430,8 @@
                 </div>
                 <h5 class="subtitle">RIT S.T.A.R.D.U.S.T Club</h5>
                 <ul class="bullet-list">
-                    <li>Designed modular software architecture for an autonomous drone system, improving scalability and
-                        maintainability.</li>
-                    <li>Structured Python-based telemetry processing pipelines for real-time mission analysis.</li>
+                    <li>Contributed to early-stage development of software modules for autonomous drone systems.</li>
+                    <li>Assisted in simulation and testing of navigation and control logic.</li>
                 </ul>
             </div>
         </section>
@@ -461,7 +476,7 @@
                     <h4 class="title" style="margin-bottom: 0.5rem;">Awards</h4>
                     <ul class="bullet-list">
                         <li>
-                            <strong>2nd Place in WHACKiest 2025</strong> (24-hour hackathon at MSRIT)
+                            <strong>Secured 2nd Place in WHACKiest 2025</strong> (24-hour hackathon at MSRIT)
                             <br>
                             <span style="font-size: 0.9em; color: #d9e2e7;">
                                 Built the StellarRoute backend using Node.js/Express.
@@ -530,65 +545,7 @@
         </section>
         <center style="color: rgb(179, 205, 214);">Copyrights @2026</center>
     </main>
-    <script>
-        document.querySelectorAll('.project-images img').forEach(img => {
-            img.onclick = () => {
-                let popup = document.createElement('div');
-                popup.style = `
-                    position: fixed;
-                    top:0; left:0;
-                    width:100%; height:100%;
-                    background: rgba(0,0,0,0.8);
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-                    z-index:1000;
-                `;
-
-                let bigImg = document.createElement('img');
-                bigImg.src = img.src;
-                bigImg.style = "max-width:80%; max-height:80vh; object-fit:contain; border-radius:10px;";
-
-                popup.appendChild(bigImg);
-                popup.onclick = () => popup.remove();
-
-                document.body.appendChild(popup);
-            };
-        });
-
-        document.querySelectorAll('.slider-track img').forEach(img => {
-            img.onclick = (event) => {
-                // This prevents the click from triggering toggleProject() on the card
-                event.stopPropagation();
-
-                let popup = document.createElement('div');
-                popup.style = `
-                position: fixed;
-                top:0; left:0;
-                width:100%; height:100%;
-                background: rgba(0,0,0,0.8);
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                z-index:1000;
-            `;
-
-                let bigImg = document.createElement('img');
-                bigImg.src = img.src;
-                bigImg.style = "max-width:80%; max-height:80vh; object-fit:contain; border-radius:10px;"; // Tweaked slightly so vertical images fit well
-
-                popup.appendChild(bigImg);
-                popup.onclick = () => popup.remove();
-
-                document.body.appendChild(popup);
-            };
-        });
-
-        function toggleProject(header) {
-            const card = header;
-            card.classList.toggle("active");
-        }
-    </script>
+    <script src="./public/script.js"> </script>
 </body>
 
 </html>
