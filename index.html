@@ -28,27 +28,42 @@
 
 <body>
     <header class="hero">
-        <div class="profile-container">
-            <img src="./public/assets/images/Profile.jpg" alt="Profile Photo" class="profile-pic">
-        </div>
-        <h1>Suraj Krishna Banavalikar</h1>
-        <h2>B.E. in Computer Science and Engineering</h2>
-        <p class="tagline">
-            Building Backend systems • Full Stack Developer • MERN • Software Development Enthusiast
-        </p>
-        <div class="contact-info">
-            <a href="mailto:skbanavalikar2105@gmail.com">skbanavalikar2105@gmail.com</a>
-            <span>•</span>
-            <span>+91 9663132144</span>
-        </div>
-        <div class="social-links">
-            <a href="https://github.com/surajkb2005" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/suraj-banavalikar-7043202a5/" target="_blank">LinkedIn</a>
-            <a href="./public/assets/Suraj_Krishna_Banavalikar_Resume.pdf"
-                download="Suraj_Krishna_Banavalikar_Resume.pdf"
-                style="background: transparent; border: 2px solid var(--accent-primary); color: var(--accent-primary);">
-                Download Resume
-            </a>
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="./public/assets/images/Profile.jpg" alt="Profile Photo" class="profile-pic">
+            </div>
+            <div class="hero-text">
+                <h1>Suraj Krishna Banavalikar</h1>
+                <h2>B.E. in Computer Science and Engineering</h2>
+                <p class="tagline">
+                    Building Backend systems • Full Stack Developer • MERN • Software Development Enthusiast
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/surajkb2005" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/suraj-banavalikar-7043202a5/" target="_blank">LinkedIn</a>
+                    <a href="./public/assets/Suraj_Krishna_Banavalikar_Resume.pdf"
+                        download="Suraj_Krishna_Banavalikar_Resume.pdf"
+                        style="background: transparent; border: 2px solid var(--accent-primary); color: var(--accent-primary);">
+                        Download Resume
+                    </a>
+                </div>
+                <br>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:skbanavalikar2105@gmail.com">
+                            skbanavalikar2105@gmail.com
+                        </a>
+                    </div>
+                    <div class="contact-divider"></div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+919663132144">
+                            +91 9663132144
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -58,16 +73,22 @@
             <div class="card" style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7;">
                 <p style="margin-bottom: 1rem;">
                     I am a 2023-2027 batch Computer Science and Engineering student at MSRIT, specializing in building
-                    highly
-                    concurrent backend systems and scalable APIs. I thrive on solving complex algorithmic challenges and
-                    engineering software for high-stakes environments, such as modular architectures for autonomous
-                    drone systems and space-weather-aware navigation.
+                    highly concurrent backend systems and scalable APIs. I thrive on solving complex algorithmic
+                    challenges and engineering software for high-stakes environments, such as modular architectures for
+                    autonomous drone systems and space-weather-aware navigation.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    My experience spans full-stack web development, RESTful APIs, database optimization, containerized
+                    deployments, and AI-powered applications using the MERN stack, Java, Python, Redis, Docker, and
+                    modern backend technologies. I continuously explore system design, operating systems, and emerging
+                    technologies to build software that is efficient, maintainable, and production-ready.
                 </p>
                 <p>
                     Beyond traditional development, I am deeply passionate about education. I run the "Debugging Doubts"
-                    platform, where I break down intricate computer science concepts, like Operating System concepts,
-                    using interactive web animations and relatable analogies to make learning
-                    accessible and engaging.
+                    youtube channel, where I break down intricate computer science concepts, like Operating System
+                    concepts, using interactive web animations and relatable analogies to make learning accessible and
+                    engaging.
+                    <a href="#teaching-section-yt">Youtube Section</a>
                 </p>
             </div>
         </section>
@@ -359,7 +380,7 @@
                             class="link-btn outline">
                             GitHub Repo
                         </a>
-                        <a href="https://youtu.be/HopyiMhyfKg?si=AwDFh7GDK9abPD5W" target="_blank"
+                        <a href="https://youtu.be/HopyiMhyfKg?si=4lxsYc1OgXXSm3fp&t=26" target="_blank"
                             class="link-btn outline">Youtube Tutorial</a>
                     </div>
                 </article>
@@ -445,7 +466,7 @@
                 <h5 class="subtitle">B.E. in Computer Science and Engineering | Oct 2023 - Present</h5>
                 <p class="coursework"><strong>Relevant Coursework:</strong> Object Oriented Programming using Java,
                     Database Management System, Discrete Mathematics,
-                    Data Structure and Algorithms, Operating Systems, Computer Networks,
+                    Data Structure and Algorithms, Operating Systems, Computer Networks, DevOps, Cloud Computing,
                     Microcontrollers & Internet of Things.
                 </p>
             </div>
@@ -479,13 +500,14 @@
                 </div>
                 <h5 class="subtitle">RIT S.T.A.R.D.U.S.T Club</h5>
                 <ul class="bullet-list">
-                    <li>Contributed to early-stage development of software modules for autonomous drone systems.</li>
-                    <li>Assisted in simulation and testing of navigation and control logic.</li>
+                    <li>Participated in the IRoC-U 2026 competition by developing and testing autonomous drone
+                        simulations using ROS 2 and Gazebo.</li>
+                    <li>Assisted in validating simulated drone behavior for competition preparation.</li>
                 </ul>
             </div>
         </section>
 
-        <section class="teaching-section">
+        <section class="teaching-section" id="teaching-section-yt">
             <h3>Content & Teaching</h3>
 
             <div class="card teaching-container">
@@ -503,8 +525,8 @@
                     <div class="teaching-btns">
                         <a href="https://www.youtube.com/@DebuggingDoubts" target="_blank"
                             class="link-btn outline">Visit Channel</a>
-                        <a href="https://surajkb2005.github.io/TeachingWithAnimations/" class="link-btn outline">View
-                            Animated Visualizations</a>
+                        <a href="https://surajkb2005.github.io/TeachingWithAnimations/" target="_blank"
+                            class="link-btn outline">View Animated Visualizations</a>
                     </div>
                 </div>
 
