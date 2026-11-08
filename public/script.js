@@ -55,3 +55,28 @@ function toggleProject(header) {
     const card = header;
     card.classList.toggle("active");
 }
+
+// --- SCROLL PROGRESS INDICATOR ---
+
+const scrollProgress = document.getElementById("scrollProgress");
+
+function updateScrollProgress() {
+    const scrollTop = window.scrollY;
+    const scrollHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const progress = scrollHeight > 0
+        ? scrollTop / scrollHeight
+        : 0;
+
+    scrollProgress.style.transform =
+        `scaleX(${Math.min(1, Math.max(0, progress))})`;
+}
+
+window.addEventListener("scroll", updateScrollProgress, {
+    passive: true
+});
+
+window.addEventListener("resize", updateScrollProgress);
+
+updateScrollProgress();
