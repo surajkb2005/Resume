@@ -617,3 +617,152 @@ h4 { color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; }
         min-width: 300px;
     }
 }
+
+/* --- FEATURED AWARD: MATCH DARK TECH THEME --- */
+
+.award-featured {
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 12px;
+
+    /* Dark background consistent with existing cards */
+    background: linear-gradient(
+        135deg,
+        rgba(56, 189, 248, 0.07),
+        rgba(30, 33, 40, 0.95) 55%
+    );
+
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    border-left: 3px solid var(--accent-primary);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.award-featured:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.12);
+}
+
+/* Award header */
+
+.award-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.award-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.award-info h4 {
+    margin: 6px 0;
+    font-size: 1.2rem;
+    color: var(--text-main);
+}
+
+/* Cyan badge instead of yellow */
+
+.award-position {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    font-weight: 800;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.award-featured p {
+    color: #d1dbe8;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Button matching the portfolio accent */
+
+.award-certificate-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 10px 18px;
+    background: var(--accent-primary);
+    color: #0f172a;
+
+    border: 1px solid var(--accent-primary);
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+    transition: all 0.3s ease;
+}
+
+.award-certificate-link:hover {
+    background: transparent;
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.15);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .award-featured {
+        padding: 1rem;
+    }
+
+    .award-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* --- CERTIFICATION ISSUER LOGOS --- */
+
+.cert-card {
+    align-items: flex-start;
+}
+
+.cert-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    background: white;
+    border-radius: 9px;
+    padding: 6px;
+    margin-bottom: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-logo {
+    transform: scale(1.08);
+}
+
+.cert-card strong {
+    min-height: 2.8rem;
+}
+
+@media (max-width: 600px) {
+    .award-featured {
+        padding: 1rem;
+    }
+
+    .award-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
